@@ -1,0 +1,14 @@
+{
+  "name": "retour-ecole-api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@vercel/node": "^5.3.24"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
