@@ -49,6 +49,20 @@ export default async function handler(
     });
   }
 
+  const expectedToken = process.env.CHILD_API_TOKEN;
+  const receivedToken = req.headers["x-device-token"];
+
+  if (
+    !expectedToken ||
+    typeof receivedToken !== "string" ||
+    receivedToken !== expectedToken
+  ) {
+    return res.status(401).json({
+      ok: false,
+      error: "UNAUTHORIZED"
+    });
+  }
+
   if (!isValidPayload(req.body)) {
     return res.status(400).json({
       ok: false,
