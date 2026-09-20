@@ -6,7 +6,7 @@
     "node": "22.x"
   },
   "scripts": {
-    "build": "tsc --noEmit"
+    "check": "tsc --noEmit"
   },
   "dependencies": {
     "@vercel/node": "^5.3.24"
