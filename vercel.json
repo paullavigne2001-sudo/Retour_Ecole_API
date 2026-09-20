@@ -1,9 +1,4 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": null,
-  "functions": {
-    "api/*.ts": {
-      "runtime": "nodejs24.x"
-    }
-  }
+  "framework": null
 }
